@@ -73,6 +73,44 @@ body {
     color: #888;
     font-size: 0.9rem;
 }
+
+/* About Me Section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap; /* Enables wrapping for mobile */
+}
+
+.about-photo img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #f5b841;  
+}
+
+.about-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f5b841;  
+}
+
+.about-info p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #ddd;
+    max-width: 600px;  /* Control the width of the text for readability */
+}
 /* Media Querries */
 @media (max-width: 768px) {
     .nav-links {
@@ -84,4 +122,24 @@ body {
         margin: 10px 0;
     }
 }
+/* about me querry*/
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stacks image and text vertically */
+        text-align: center;     /* Center-aligns the text for mobile */
+    }
 
+    .about-photo img {
+        width: 250px; /* Smaller image on mobile */
+        height: 250px;
+        margin-bottom: 20px; /* Adds space between image and text */
+    }
+
+    .about-info h1 {
+        font-size: 2rem; /* Slightly smaller heading for mobile */
+    }
+
+    .about-info p {
+        font-size: 1rem; /* Adjusts paragraph size for mobile */
+    }
+}
