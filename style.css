@@ -198,6 +198,9 @@ body {
     .nav-links li {
         margin: 10px 0;
     }
+    .teams-section h1{
+        margin-top: 10rem;
+    }
 }
 /* about me querry*/
 @media (max-width: 768px) {
