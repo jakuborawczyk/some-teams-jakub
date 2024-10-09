@@ -1,13 +1,6 @@
 <?php require __DIR__ ."/navbar.php";
 require __DIR__ ."/data.php";
 
-// Sort the teams by UEFA Coefficient Ranking and preserve the team names as keys
-uasort($teams, function($a, $b) {
-    if ($a['uefa-coefficient-ranking'] === 'Not ranked') return 1;
-    if ($b['uefa-coefficient-ranking'] === 'Not ranked') return -1;
-    return $a['uefa-coefficient-ranking'] - $b['uefa-coefficient-ranking'];
-});
-
 // Assign UEFA ranking based on sorted order
 $rank = 1;
 foreach ($teams as $teamName => $teamData) {
