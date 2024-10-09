@@ -6,7 +6,7 @@
         <div class="about-content">
             <div class="about-photo">
                 <!-- IMG -->
-                <img src="FB_IMG_1715598716335.jpg" alt="Your Name" />
+                <img src="FB_IMG_1715598716335.jpg" alt="Photo of Jakub Orawczyk with sunglases" />
             </div>
             <div class="about-info">
                 <h1>About Me</h1>

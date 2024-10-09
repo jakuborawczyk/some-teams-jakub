@@ -213,6 +213,7 @@ body {
         width: 250px; /* Smaller image on mobile */
         height: 250px;
         margin-bottom: 20px; /* Adds space between image and text */
+        margin-top: 8rem;
     }
 
     .about-info h1 {
